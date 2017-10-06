@@ -1,0 +1,8 @@
+{
+    "problem_schema": "/storage/datasets/seed/o_38/problemSchema.json",
+    "dataset_schema": "/storage/datasets/seed/o_38/data/dataSchema.json",
+    "training_data_root": "/storage/datasets/seed/o_38/data",
+    "pipeline_logs_root": "/storage/pipeline_logs",
+    "executables_root": "/storage/solution",
+    "temp_storage_root": "/storage/temp"
+}
