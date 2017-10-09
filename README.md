@@ -20,10 +20,13 @@ credentials.
 5. Copy the seed dataset into a shared directory for TA2 and TA3: `mkdir
    /storage/datasets/seed && cp -rv o_38 /storage/datasets/seed`.
 
-6. Launch the TA2 Docker container: `docker run --shm-size=1g -p 50001:50051 -v
+6. Set global write permissions on the data directory: `sudo chmod -R go+w
+   /storage/datasets`.
+
+7. Launch the TA2 Docker container: `docker run --shm-size=1g -p 50001:50051 -v
    /storage:/data registry.datadrivendiscovery.org/berkeley/aika`.
 
-7. Launch the TA3 server: `cd modsquad && PORT=8080
+8. Launch the TA3 server: `cd modsquad && PORT=8080
    JSON_CONFIG_PATH=./config.json npm run serve`.
 
-8. Visit http://localhost:8080 to try out the integration.
+9. Visit http://localhost:8080 to try out the integration.
